@@ -101,7 +101,7 @@ const Banner = () => {
                                 <Image width={50} height={50} src="https://i.pravatar.cc/150?img=3" alt="Student" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
                             </div>
                             <div className="flex flex-col pr-2">
-                                <span className="text-xs sm:text-sm font-bold text-gray-900">Join 50k+</span>
+                                <span className="text-xs sm:text-sm font-bold text-gray-900">Join 20k+</span>
                                 <span className="text-[10px] sm:text-xs text-gray-500 font-medium">Students</span>
                             </div>
                         </div>
@@ -112,7 +112,7 @@ const Banner = () => {
                                 <FiBookOpen className="text-xl sm:text-2xl" />
                             </div>
                             <div className="flex flex-col pr-2">
-                                <span className="text-xs sm:text-sm font-bold text-gray-900">200+ Courses</span>
+                                <span className="text-xs sm:text-sm font-bold text-gray-900">25+ Courses</span>
                                 <span className="text-[10px] sm:text-xs text-gray-500 font-medium">Available Now</span>
                             </div>
                         </div>

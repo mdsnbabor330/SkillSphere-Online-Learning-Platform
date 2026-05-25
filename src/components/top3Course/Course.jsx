@@ -3,12 +3,13 @@ import Link from 'next/link';
 import React from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 
-import CourseCard from '@/UI/courseCard';
+import CourseCard from '@/UI/CourseCard';
 
 
 const Course = async () => {
-    const course = await getCourseData()
-    const top3Course = course.slice(0, 3);
+    const courses = await getCourseData()
+    console.log(courses);
+    const top3Course = courses.slice(0, 3);
     
     return (
         <div className='max-w-325 mx-auto my-20 px-4'>
