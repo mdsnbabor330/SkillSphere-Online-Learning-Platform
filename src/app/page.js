@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Course from "@/components/top3Course/Course";
+import Banner from "../components/banner/Banner";
 
 export default function Home() {
   return (
-    <div >
-      <h1>this is home page</h1>
-    </div>
+    <>
+      <Banner />
+      <Course/>
+    </>
   );
 }

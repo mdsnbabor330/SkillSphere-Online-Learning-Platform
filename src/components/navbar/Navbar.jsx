@@ -1,15 +1,18 @@
 import Link from "next/link";
 import React from "react";
-import { GiOpenBook } from "react-icons/gi";
 import { IoBookOutline } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100 shadow-md">
+    <div className="bg-base-100 shadow-sm fixed top-0 left-0 right-0 z-50">
       <div className="navbar max-w-350 mx-auto">
         <div className="navbar-start">
           <div className="dropdown absolute right-2 sm:relative dropdown-left">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden "
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -34,8 +37,13 @@ const Navbar = () => {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">Course</Link>
+                <Link href={`/allcourse`}>Course</Link>
               </li>
+              <li>
+              <Link href="/profile" className="hidden">
+                My Profile
+              </Link>
+            </li>
               <li className=" space-y-2 mt-4 sm:hidden">
                 <button className="btn bg-[#09C82C] py-1 px-5 rounded-full border-none text-white hover:shadow-md shadow-[#09C82C]/50 transition duration-300 ease-in-out ">
                   <Link href="/signin">Login</Link>
@@ -60,7 +68,7 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/course">Course</Link>
+              <Link href={`/allcourse`}>Course</Link>
             </li>
             <li>
               <Link href="/profile" className="hidden">
@@ -70,12 +78,16 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end gap-2 hidden sm:flex">
-          <button className="btn bg-[#09C82C] px-5 rounded-full border-none text-white hover:shadow-md shadow-[#09C82C]/50 transition duration-300 ease-in-out ">
-            <Link href="/signin">Login</Link>
-          </button>
-          <button className="btn bg-[#09C82C] px-5 rounded-full border-none text-white hover:shadow-md shadow-[#09C82C]/50 transition duration-300 ease-in-out ">
-            <Link href="/signup">Register</Link>
-          </button>
+          <Link href="/signin" className="block">
+            <button className="btn bg-[#09C82C] px-5 rounded-full border-none text-white hover:shadow-md shadow-[#09C82C]/50 transition duration-300 ease-in-out ">
+              Login
+            </button>
+          </Link>
+          <Link href="/signup" className="block">
+            <button className="btn bg-[#09C82C] px-5 rounded-full border-none text-white hover:shadow-md shadow-[#09C82C]/50 transition duration-300 ease-in-out ">
+              Register
+            </button>
+          </Link>
         </div>
       </div>
     </div>
