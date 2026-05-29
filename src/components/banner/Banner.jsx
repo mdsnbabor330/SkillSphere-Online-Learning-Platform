@@ -28,7 +28,7 @@ const Banner = () => {
 
                         {/* Subheading */}
                         <p className="text-gray-500 text-lg sm:text-xl max-w-lg leading-relaxed">
-                            Join over 50,000+ students learning from world-class mentors.
+                            Join over 20,000+ students learning from world-class mentors.
                             Transform your career with industry-leading courses.
                         </p>
 
@@ -86,19 +86,19 @@ const Banner = () => {
                             />
                             
                             {/* Play Button Overlay */}
-                            <div className="absolute inset-0 flex items-center justify-center bg-black/5 rounded-[1.5rem]">
-                                <button className="w-20 h-20 bg-green-500/90 backdrop-blur-sm text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 hover:bg-green-500 transition-all cursor-pointer ring-8 ring-white/50">
-                                    <FaPlay className="ml-1 text-2xl" />
-                                </button>
+                            <div className="absolute inset-0 flex items-center justify-center bg-transparent/5 rounded-[1.5rem]">
+                                <label htmlFor="my_modal_7" className="w-20 h-20 bg-green-500/90 backdrop-blur-sm text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 hover:bg-green-500 transition-all cursor-pointer ring-8 ring-white/50 ">
+                                    <FaPlay className="ml-1 text-2xl animate-pulse hover:animate-none transition-all duration-300" />
+                                </label>
                             </div>
                         </div>
 
                         {/* Top Right Floating Card */}
                         <div className="absolute -top-4 -right-2 sm:-top-6 sm:-right-8 bg-white px-4 sm:px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-gray-100 animate-bounce" style={{ animationDuration: '3s' }}>
                             <div className="flex -space-x-3">
-                                <Image width={50} height={50} src="https://i.pravatar.cc/150?img=1" alt="Student" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
-                                <Image width={50} height={50} src="https://i.pravatar.cc/150?img=2" alt="Student" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
-                                <Image width={50} height={50} src="https://i.pravatar.cc/150?img=3" alt="Student" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
+                                <Image width={50} height={50} src="https://i.pravatar.cc/150?img=5" alt="Student" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
+                                <Image width={50} height={50} src="https://i.pravatar.cc/150?img=4" alt="Student" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
+                                <Image width={50} height={50} src="https://i.pravatar.cc/150?img=8" alt="Student" className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border-2 border-white object-cover" />
                             </div>
                             <div className="flex flex-col pr-2">
                                 <span className="text-xs sm:text-sm font-bold text-gray-900">Join 20k+</span>

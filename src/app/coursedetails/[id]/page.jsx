@@ -9,11 +9,10 @@ const CourseDetails = async ({ params }) => {
     const courseDetails = await getCourseDetailsData(id);
     
     return (
-        <div className='my-20 max-w-[1200px] mx-auto px-4'>
+        <div className='my-20 max-w-300 mx-auto px-4'>
                 <Link href="/allcourse" className='my-6 flex items-center gap-2 cursor-pointer text-gray-500 hover:text-[#4eac6d] font-extrabold text-[14px] uppercase tracking-wider'> 
                 <FaArrowLeft/> <span>Back to all courses</span></Link>
             <div className='flex flex-col lg:flex-row gap-8 items-start'>
-                {/* Left Side: Image */}
                 <div className='w-full lg:w-[45%]'>
                     <div className='relative rounded-2xl overflow-hidden shadow-sm'>
                         <Image 
@@ -25,7 +24,6 @@ const CourseDetails = async ({ params }) => {
                         />
                     </div>
                     
-                    {/* Instructor Info */}
                     <div className='mt-6 bg-white rounded-2xl shadow-sm border border-gray-100 p-6 flex items-center gap-4'>
                         <img 
                             src={`https://ui-avatars.com/api/?name=${encodeURIComponent(courseDetails.instructor)}&background=random&size=64`} 
@@ -39,7 +37,6 @@ const CourseDetails = async ({ params }) => {
                     </div>
                 </div>
 
-                {/* Right Side: Details Card */}
                 <div className='w-full lg:w-[55%] bg-white rounded-2xl shadow-sm border border-gray-100 p-8'>
                     <span className='text-gray-500 font-extrabold text-[11px] uppercase tracking-wider'>{courseDetails.category}</span>
                     <h1 className='text-4xl lg:text-5xl font-extrabold text-gray-900 mt-2 mb-4 leading-[1.1]'>
