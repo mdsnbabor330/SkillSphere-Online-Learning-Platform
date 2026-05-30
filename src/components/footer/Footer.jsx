@@ -11,7 +11,7 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="lg:col-span-2 pr-8">
                         <Link href="/" className="flex items-center gap-2 mb-4">
-                            <FiBookOpen className="text-[#09ac6e] text-2xl" />
+                            <FiBookOpen className="text-[#09C82C] text-2xl" />
                             <span className="text-xl font-bold text-slate-800">SkillSphere</span>
                         </Link>
                         <p className="text-slate-500 text-sm mb-6 leading-relaxed">
@@ -20,15 +20,15 @@ const Footer = () => {
                         </p>
                         <div className="space-y-3">
                             <div className="flex items-center gap-3 text-sm text-slate-500">
-                                <FiMail className="text-[#09ac6e] text-base" />
+                                <FiMail className="text-[#09C82C] text-base" />
                                 <span>hello@skillsphere.com</span>
                             </div>
                             <div className="flex items-center gap-3 text-sm text-slate-500">
-                                <FiPhone className="text-[#09ac6e] text-base" />
+                                <FiPhone className="text-[#09C82C] text-base" />
                                 <span>+1 (234) 567-890</span>
                             </div>
                             <div className="flex items-center gap-3 text-sm text-slate-500">
-                                <FiMapPin className="text-[#09ac6e] text-base" />
+                                <FiMapPin className="text-[#09C82C] text-base" />
                                 <span>San Francisco, CA</span>
                             </div>
                         </div>
@@ -38,10 +38,10 @@ const Footer = () => {
                     <div>
                         <h3 className="text-slate-800 font-bold text-base mb-4">Product</h3>
                         <ul className="space-y-3">
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Features</Link></li>
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Pricing</Link></li>
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Courses</Link></li>
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Community</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Features</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Pricing</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Courses</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Community</Link></li>
                         </ul>
                     </div>
 
@@ -49,10 +49,10 @@ const Footer = () => {
                     <div>
                         <h3 className="text-slate-800 font-bold text-base mb-4">Company</h3>
                         <ul className="space-y-3">
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">About Us</Link></li>
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Careers</Link></li>
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Blog</Link></li>
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Press</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">About Us</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Careers</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Blog</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Press</Link></li>
                         </ul>
                     </div>
 
@@ -60,10 +60,10 @@ const Footer = () => {
                     <div>
                         <h3 className="text-slate-800 font-bold text-base mb-4">Support</h3>
                         <ul className="space-y-3">
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Help Center</Link></li>
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Contact Us</Link></li>
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Privacy Policy</Link></li>
-                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09ac6e] transition-colors">Terms of Service</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Help Center</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Contact Us</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="#" className="text-slate-500 text-sm hover:text-[#09C82C] transition-colors">Terms of Service</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -74,13 +74,13 @@ const Footer = () => {
                         © 2026 SkillSphere. All rights reserved
                     </p>
                     <div className="flex items-center gap-4 text-slate-500">
-                        <Link href="#" className="hover:text-[#09ac6e] transition-colors">
+                        <Link href="#" className="hover:text-[#09C82C] transition-colors">
                             <FaXTwitter className="text-lg" />
                         </Link>
-                        <Link href="#" className="hover:text-[#09ac6e] transition-colors">
+                        <Link href="#" className="hover:text-[#09C82C] transition-colors">
                             <FiLinkedin className="text-lg" />
                         </Link>
-                        <Link href="#" className="hover:text-[#09ac6e] transition-colors">
+                        <Link href="#" className="hover:text-[#09C82C] transition-colors">
                             <FiGithub className="text-lg" />
                         </Link>
                     </div>

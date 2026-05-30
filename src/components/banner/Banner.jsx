@@ -5,7 +5,7 @@ import { FiUsers, FiBookOpen, FiAward } from 'react-icons/fi';
 
 const Banner = () => {
     return (
-        <section className="relative overflow-hidden bg-white pt-24">
+        <section className="relative overflow-hidden bg-white pt-10">
             {/* Background Blob */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-200/50 rounded-full blur-[100px] -z-10"></div>
             

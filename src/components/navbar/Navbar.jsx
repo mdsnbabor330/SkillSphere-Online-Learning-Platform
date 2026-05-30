@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import { IoBookOutline } from "react-icons/io5";
+import NavLink from "./NavLink";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100 shadow-sm fixed top-0 left-0 right-0 z-50">
+    <div className="bg-base-100 shadow-sm sticky top-0 z-50">
       <div className="navbar max-w-350 mx-auto">
         <div className="navbar-start">
           <div className="dropdown absolute right-2 sm:relative dropdown-left">
@@ -31,19 +32,18 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-5 shadow-xl text-center "
             >
               <li>
-                <Link href="/">Home</Link>
+                <NavLink href="/">Home</NavLink>
               </li>
               <li>
-                <Link href={`/allcourse`}>Course</Link>
+                <NavLink href={`/all-courses`}>Course</NavLink>
               </li>
-              <li>
-              <Link href="/profile" className="hidden">
-                My Profile
-              </Link>
-            </li>
+              <li className="hidden">
+               <NavLink href="/profile">My Profile</NavLink>
+              </li>
+
               <li className=" space-y-2 mt-4 sm:hidden">
                 <button className="btn bg-[#09C82C] py-1 px-5 rounded-full border-none text-white hover:shadow-md shadow-[#09C82C]/50 transition duration-300 ease-in-out ">
                   <Link href="/signin">Login</Link>
@@ -63,17 +63,15 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 ">
             <li>
-              <Link href="/">Home</Link>
+              <NavLink href="/">Home</NavLink>
             </li>
             <li>
-              <Link href={`/allcourse`}>Course</Link>
+              <NavLink href={`/all-courses`}>Course</NavLink>
             </li>
-            <li>
-              <Link href="/profile" className="hidden">
-                My Profile
-              </Link>
+            <li className="hidden">
+              <NavLink href="/profile">My Profile</NavLink>
             </li>
           </ul>
         </div>

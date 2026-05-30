@@ -48,7 +48,7 @@ const Mentors = () => {
     return (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-20 overflow-hidden">
             <div className="mb-10">
-                <span className="text-[#09ac6e] font-semibold uppercase tracking-wider text-sm block mb-3">
+                <span className="text-[#09C82C] font-semibold uppercase tracking-wider text-sm block mb-3">
                     Top Instructors
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">

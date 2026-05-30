@@ -9,8 +9,8 @@ const CourseDetails = async ({ params }) => {
     const courseDetails = await getCourseDetailsData(id);
     
     return (
-        <div className='my-20 max-w-300 mx-auto px-4'>
-                <Link href="/allcourse" className='my-6 flex items-center gap-2 cursor-pointer text-gray-500 hover:text-[#4eac6d] font-extrabold text-[14px] uppercase tracking-wider'> 
+        <div className='my-5 max-w-300 mx-auto px-4'>
+                <Link href="/all-courses" className='my-6 flex items-center gap-2 cursor-pointer text-gray-500 hover:text-[#4eac6d] font-extrabold text-[14px] uppercase tracking-wider'> 
                 <FaArrowLeft/> <span>Back to all courses</span></Link>
             <div className='flex flex-col lg:flex-row gap-8 items-start'>
                 <div className='w-full lg:w-[45%]'>

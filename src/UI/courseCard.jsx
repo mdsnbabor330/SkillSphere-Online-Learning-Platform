@@ -25,67 +25,64 @@ const getPrice = (category) => {
 };
 
 const CourseCard = ({course}) => {
-    console.log(course);
     const {id, image, title, category, instructor, duration, enrolledStudents, rating} = course
     return (
-        <div>
-            <div key={id} className='border border-gray-100 rounded-[22px] p-4 bg-white shadow-sm hover:shadow-md transition-shadow'>
-                        {/* Image Container */}
-                        <div className='relative rounded-2xl overflow-hidden h-62 mb-5 bg-gray-50'>
-                            <Image 
-                                src={image} 
-                                alt={title} 
-                                width={500}
-                                height={500}
-                                className='w-full h-full object-cover'
-                            />
-                            <span className={`absolute top-4 left-4 px-3 py-1 text-[11px] font-semibold text-white rounded-full ${getCategoryColor(category)}`}>
-                                {category}
-                            </span>
-                        </div>
-                        
-                        {/* Card Content */}
-                        <div className='flex flex-col gap-3 px-2'>
-                            <h3 className='font-bold text-[18px] leading-snug text-gray-900 line-clamp-2'>
-                                {title}
-                            </h3>
-                            
-                            <div className='flex items-center gap-2 mb-1'>
-                                <img 
-                                    src={`https://ui-avatars.com/api/?name=${encodeURIComponent(instructor)}&background=random&size=32`} 
-                                    alt={instructor}
-                                    className='w-6 h-6 rounded-full' 
-                                />
-                                <span className='text-sm text-gray-500'>{instructor}</span>
-                            </div>
-                            
-                            {/* Meta Data */}
-                            <div className='flex items-center justify-between text-sm text-gray-500 pt-3 pb-3 border-b border-gray-100'>
-                                <div className='flex items-center gap-1.5'>
-                                    <FiClock className='text-gray-400 text-[15px]' /> 
-                                    <span>{duration.replace(' hours', ' weeks')}</span>
-                                </div>
-                                <div className='flex items-center gap-1.5'>
-                                    <FiUsers className='text-gray-400 text-[15px]' /> 
-                                    <span>{enrolledStudents}</span>
-                                </div>
-                                <div className='flex items-center gap-1.5 font-medium'>
-                                    <FaStar className='text-amber-400 text-[15px]' /> 
-                                    <span className='text-gray-600'>{rating}</span>
-                                </div>
-                            </div>
-                            
-                            {/* Footer */}
-                            <div className='flex items-center justify-between pt-2 pb-1'>
-                                <span className='text-2xl font-extrabold text-gray-900'>{getPrice(category)}</span>
-                                <Link href={`/coursedetails/${id}`}>
-                                    <button className='cursor-pointer text-[#4eac6d] text-[15px] font-semibold hover:text-green-600 flex items-center gap-1 transition-colors'>
-                                        Details <FiArrowRight className="text-lg" />
-                                    </button>
-                                </Link>
-                            </div>
-                        </div>
+        <div key={id} className='border border-gray-100 rounded-[22px] p-4 bg-white shadow-sm hover:shadow-md transition-shadow'>
+            {/* Image Container */}
+            <div className='relative rounded-2xl overflow-hidden h-48 mb-5 bg-gray-50'>
+                <Image 
+                    src={image} 
+                    alt={title} 
+                    width={500}
+                    height={500}
+                    className='w-full h-full object-cover'
+                />
+                <span className={`absolute top-4 left-4 px-3 py-1 text-[11px] font-semibold text-white rounded-full ${getCategoryColor(category)}`}>
+                    {category}
+                </span>
+            </div>
+            
+            {/* Card Content */}
+            <div className='flex flex-col gap-3 px-2'>
+                <h3 className='font-bold text-[18px] leading-snug text-gray-900 line-clamp-2'>
+                    {title}
+                </h3>
+                
+                <div className='flex items-center gap-2 mb-1'>
+                    <img 
+                        src={`https://ui-avatars.com/api/?name=${encodeURIComponent(instructor)}&background=random&size=32`} 
+                        alt={instructor}
+                        className='w-6 h-6 rounded-full' 
+                    />
+                    <span className='text-sm text-gray-500'>{instructor}</span>
+                </div>
+                
+                {/* Meta Data */}
+                <div className='flex items-center justify-between text-sm text-gray-500 pt-3 pb-3 border-b border-gray-100'>
+                    <div className='flex items-center gap-1.5'>
+                        <FiClock className='text-gray-400 text-[15px]' /> 
+                        <span>{duration.replace(' hours', ' weeks')}</span>
                     </div>
+                    <div className='flex items-center gap-1.5'>
+                        <FiUsers className='text-gray-400 text-[15px]' /> 
+                        <span>{enrolledStudents}</span>
+                    </div>
+                    <div className='flex items-center gap-1.5 font-medium'>
+                        <FaStar className='text-amber-400 text-[15px]' /> 
+                        <span className='text-gray-600'>{rating}</span>
+                    </div>
+                </div>
+                
+                {/* Footer */}
+                <div className='flex items-center justify-between pt-2 pb-1'>
+                    <span className='text-2xl font-extrabold text-gray-900'>{getPrice(category)}</span>
+                    <Link href={`/course-details/${id}`}>
+                        <button className='cursor-pointer text-[#09C82C] text-[15px] font-semibold hover:text-green-600 flex items-center gap-1 transition-colors'>
+                            Details <FiArrowRight className="text-lg" />
+                        </button>
+                    </Link>
+                </div>
+            </div>
         </div>
     );
 };

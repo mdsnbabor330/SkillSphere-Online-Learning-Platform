@@ -3,16 +3,15 @@ import Link from 'next/link';
 import React from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 
-import CourseCard from '@/UI/CourseCard';
+import CourseCard from '@/ui/CourseCard';
 
 
 const Course = async () => {
     const courses = await getCourseData()
-    console.log(courses);
     const top3Course = courses.slice(0, 3);
     
     return (
-        <div className='max-w-325 mx-auto my-20 px-4'>
+        <div className='max-w-7xl mx-auto my-20 px-4'>
             <div className='text-center mb-16'>
                 <span className='text-[#4eac6d] font-bold uppercase tracking-widest text-sm'>Course</span>
                 <h2 className='text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-4'>
@@ -30,7 +29,7 @@ const Course = async () => {
             </div>
             
             <div className='text-center mt-8'>
-                <Link href='/allcourse' className="w-full">
+                <Link href='/all-courses' className="w-full">
                     <button className=' cursor-pointer px-7 py-3 border-2 border-[#4eac6d] rounded-full text-sm font-semibold text-[#4eac6d] hover:text-white hover:bg-[#4eac6d] transition-colors inline-flex items-center gap-2 mx-auto'>
                         View All Courses <FiArrowRight />
                     </button>
